@@ -149,8 +149,9 @@
             /* Lift button on hover */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
-        /* General Content Layout */  
-        .about-content,  
+
+        /* General Content Layout */
+        .about-content,
         .portfolio-grid,
         .contact-form {
             display: flex;
@@ -171,8 +172,8 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             /* Hover animation */
         }
-            what is this
-        .about-content div:hover {
+
+        what is this .about-content div:hover {
             transform: translateY(-8px);
             /* Lift on hover */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -335,6 +336,86 @@
             }
         }
 
+        .help-support {
+            margin-top: 10px;
+            padding: 30px;
+            /* background: #f9fafc;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
+        }
+
+        .help-support h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .help-support .intro {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .support-points {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .point {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .point span {
+            color: #4caf50;
+            font-size: 18px;
+            margin-top: 2px;
+        }
+
+        .point p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .contact-info {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        .contact-info h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .response-time {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .thank-you {
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+        }
+
+
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             header h1 {
@@ -392,9 +473,9 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h1>Crafting Seamless Mobile Experiences with Flutter</h1>
+            <h1>Building Scalable Mobile Applications with Flutter</h1>
             <p>B.Tech in Computer Science and Engineering</p>
-            <a href="#portfolio" class="btn">View My Portfolio</a>
+            <a href="AppDevResume.html" class="btn">View My Resume</a>
         </div>
     </section>
 
@@ -404,16 +485,20 @@
             <div class="about-content">
                 <div data-aos="fade-right" data-aos-delay="100">
                     <h3>Introduction</h3>
-                    <p>Hello! I'm Rohit Bhondekar, a passionate Flutter App Developer based in Chhindwara, Madhya
-                        Pradesh. With a B.Tech in Computer Science and Engineering, I love bringing ideas to life
-                        through elegant and efficient mobile applications. My journey into software development has been
-                        driven by curiosity and a desire to create impactful digital solutions.</p>
+                    <p>
+                        Hello! I'm Rohit Bhondekar, a Flutter App Developer from Chhindwara, Madhya Pradesh.
+                        I am currently pursuing my B.Tech in Computer Science and Engineering (2022–2026).
+                        I enjoy building clean, efficient, and user-friendly mobile applications using Flutter.
+                        My interest in software development comes from my curiosity to learn new technologies
+                        and my passion for creating real-world digital solutions.
+                    </p>
                 </div>
+
                 <div data-aos="fade-up" data-aos-delay="200">
                     <h3>Education</h3>
                     <p><strong>B.Tech in Computer Science and Engineering</strong><br>
                         [RGPV Bhopal/AITRC Chhindwara], [Chhindwara/M.P.]<br>
-                        [2026]</p>
+                        [2022-2026]</p>
                 </div>
                 <div data-aos="fade-left" data-aos-delay="300">
                     <h3>Skills</h3>
@@ -434,39 +519,80 @@
             <h2>My Portfolio</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="image.png" alt="image not loding">
+                    <img src="project_img.png" alt="image not loding">
                     <h3>E-commerce App</h3>
                     <p>Developed a Basic e-commerce mobile application using Flutter with Firebase backend. Features
                         include product Browse, shopping, user authentication, and order management.</p>
                     <p><strong>Technologies:</strong> Flutter, Firebase (Firestore, Auth, Storage), GetX</p>
-                    <!-- <a href="https://github.com/rohitbhondekar/ecommerce-app" target="_blank">View on GitHub</a> | <a href="#" target="_blank">Live Demo (if any)</a> -->
                 </div>
 
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="project_img.png" alt="FGDMS Scanner App">
+                    <h3>FGDMS Scanner App</h3>
+                    <p>
+                        A scanning-based mobile application developed for efficient field data collection and
+                        management. The app allows users to scan codes, validate records, and sync data in real time
+                        with the backend system.
+                    </p>
+                    <p>
+                        Focused on performance optimization, secure data handling, and smooth user experience for
+                        on-ground operations.
+                    </p>
+                    <p><strong>Technologies:</strong> Flutter, Dart, Firebase, REST API</p>
+                </div>
+
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="project_img.png" alt="I-Park App">
+                    <h3>I-Park App</h3>
+                    <p>
+                        A smart parking management application that helps users find and manage parking spaces
+                        efficiently. Worked on UI components, data integration, and app optimization.
+                    </p>
+                    <p>
+                        Ensured smooth performance and clean user experience across multiple devices.
+                    </p>
+                    <p><strong>Technologies:</strong> Flutter, Dart, Firebase</p>
+                </div>
                 <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://via.placeholder.com/400x200?text=Task+Management+App" alt="Task Management App">
-                    <h3>Task Management App</h3>
-                    <p>A simple yet powerful task management application to help users organize their daily tasks.
-                        Implemented local data persistence and intuitive UI/UX.</p>
-                    <p><strong>Technologies:</strong> Flutter, SQLite, Bloc</p>
-                    <!-- <a href="https://github.com/rohitbhondekar/task-app" target="_blank">View on GitHub</a> | <a href="#" target="_blank">Live Demo (if any)</a> -->
+                    <img src="project_img.png" alt="Credence App">
+                    <h3>Credence App</h3>
+                    <p>
+                        A business-oriented mobile application designed to manage user data, reports, and real-time
+                        records efficiently. Worked on UI implementation, API integration, and feature enhancements.
+                    </p>
+                    <p>
+                        Improved app stability by fixing bugs and enhancing existing functionalities.
+                    </p>
+                    <p><strong>Technologies:</strong> Flutter, Dart, Firebase, REST API</p>
                 </div>
 
                 <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="https://via.placeholder.com/400x200?text=Weather+Forecast+App" alt="Weather Forecast App">
-                    <h3>Weather Forecast App</h3>
-                    <p>Real-time weather application consuming a public API to display current weather and forecast data
-                        for various locations.</p>
-                    <p><strong>Technologies:</strong> Flutter, Dio, REST API Integration</p>
-                    <!-- <a href="https://github.com/rohitbhondekar/weather-app" target="_blank">View on GitHub</a> | <a href="#" target="_blank">Live Demo (if any)</a> -->
+                    <img src="project_img.png" alt="Rocket Sale App">
+                    <h3>Rocket Sale App</h3>
+                    <p>
+                        An e-commerce style mobile application developed for managing product listings, orders, and
+                        customer interactions. Focused on creating responsive UI and improving user flow.
+                    </p>
+                    <p>
+                        Integrated backend services and optimized screens for better performance.
+                    </p>
+                    <p><strong>Technologies:</strong> Flutter, Dart, Firebase</p>
                 </div>
 
-                <!-- <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="https://via.placeholder.com/400x200?text=Recipe+Finder" alt="Recipe Finder App">
-                    <h3>Recipe Finder App</h3>
-                    <p>An application that helps users discover new recipes based on available ingredients or search queries, integrating with a recipe API.</p>
-                    <p><strong>Technologies:</strong> Flutter, Http Package, External API</p>
-                    <a href="https://github.com/rohitbhondekar/recipe-app" target="_blank">View on GitHub</a> | <a href="#" target="_blank">Live Demo (if any)</a>
-                </div> -->
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="project_img.png" alt="Parentseye App">
+                    <h3>Parentseye App</h3>
+                    <p>
+                        A parental monitoring and tracking application designed to help parents monitor activities
+                        and receive real-time updates. Contributed to UI screens, API integration, and feature updates.
+                    </p>
+                    <p>
+                        Enhanced usability and fixed production-level issues to improve overall app performance.
+                    </p>
+                    <p><strong>Technologies:</strong> Flutter, Dart, Firebase, REST API</p>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -491,6 +617,54 @@
                     <button type="submit" id="sendBtn">Send Message</button>
                 </form>
             </div>
+
+            <div class="help-support">
+                <h3>Help & Support</h3>
+
+                <p class="intro">
+                    This app is designed to be simple, useful, and easy to use.
+                </p>
+
+                <div class="support-points">
+                    <div class="point">
+                        <span>✔</span>
+                        <p>
+                            If you experience any issues, bugs, or unexpected behavior while using this app,
+                            please let me know.
+                        </p>
+                    </div>
+
+                    <div class="point">
+                        <span>✔</span>
+                        <p>
+                            Suggestions and feature improvement ideas are always welcome.
+                        </p>
+                    </div>
+
+                    <div class="point">
+                        <span>✔</span>
+                        <p>
+                            I am continuously working to improve the app based on user feedback.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p>
+                        📧 Email:
+                        <a href="mailto:rohitbhondekar59@gmail.com">rohitbhondekar59@gmail.com</a>
+                    </p>
+                    <p class="response-time">
+                        ⏱ I usually respond within <strong>24–48 hours</strong>.
+                    </p>
+                </div>
+
+                <p class="thank-you">
+                    Thank you for using this app and for your support 🙏
+                </p>
+            </div>
+
         </div>
     </section>
 
@@ -498,9 +672,9 @@
         <div class="container">
             <p>&copy; 2025 Rohit Bhondekar. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/rohitbhondekar" target="_blank" title="LinkedIn"><i
+                <a href="https://www.linkedin.com/in/rohit-bhondekar-184b59247/" target="_blank" title="LinkedIn"><i
                         class="fab fa-linkedin"></i>LinkedIn</a>
-                <a href="https://github.com/rohitbhondekar" target="_blank" title="GitHub"><i
+                <a href="https://github.com/Rohit-Bhondekar" target="_blank" title="GitHub"><i
                         class="fab fa-github"></i>GitHub</a>
             </div>
         </div>
